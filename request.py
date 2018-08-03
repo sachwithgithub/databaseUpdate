@@ -5,7 +5,7 @@ import datetime
 start = datetime.datetime.now()
 
 def add_employee(id_value,first_name,last_name):
-    url = "http://127.0.0.1:5000/insert"
+    url = "http://35.231.235.193:5000/insert"
     payload = {'id':id_value,'first_name':first_name,'last_name':last_name}
     headers = {'content-type':"application/json"}
     try:
@@ -17,7 +17,7 @@ def add_employee(id_value,first_name,last_name):
 
 
 def update_employee(id_value,key,value):
-    url = "http://127.0.0.1:5000/update"
+    url = "http://35.231.235.193:5000/update"
     payload = {'id':id_value,'key':key,'value':value}
     headers = {'content-type':"application/json"}
     try:
@@ -29,7 +29,7 @@ def update_employee(id_value,key,value):
 
 
 def delete_employee(id_value):
-    url = "http://127.0.0.1:5000/delete"
+    url = "http://35.231.235.193:5000/delete"
     payload = {'id':id_value}
     headers = {'content-type':"application/json"}
     try:
@@ -41,7 +41,7 @@ def delete_employee(id_value):
 
 
 def query_employee():
-    url = "http://127.0.0.1:5000/query"
+    url = "http://35.231.235.193:5000/query"
     #payload = {'id':id_value}
     headers = {'content-type':"application/json"}
     try:
